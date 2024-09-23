@@ -10,7 +10,7 @@ public class FabricaConexao {
         try {
             String url = "jdbc:mysql://localhost:3306/curso_java?autoReconnect=true&useSSL=false"; // Substitua pelo seu URL do banco de dados
             String user = "root";// substitua pelo seu usuário
-            String password = "senaigama";//substitua pela sua senha
+            String password = "luca##12";//substitua pela sua senha
 
             return DriverManager.getConnection(url,user,password);
         } catch (SQLException e) {

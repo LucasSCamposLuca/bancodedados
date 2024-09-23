@@ -20,13 +20,16 @@ public class ConsultarDados {
         while(resultado.next()) {
             int codigo  = resultado.getInt("codigo");
             String nome = resultado.getString("nome");
-            pessoas.add(new Pessoa(codigo, nome));
+            int idade = resultado.getInt("idade");
+            String email = resultado.getString("email");
+            pessoas.add(new Pessoa(codigo, nome, idade, email));
         }
 
         for (Pessoa p: pessoas) {
-            System.out.println(p.getCodigo() + " -> "+ p.getNome());
+            System.out.println(p.getCodigo() + " -> "+ p.getNome() +" "+ p.getIdade() +" "+ p.getEmail());
         }
         stmt.close();
         conexao.close();
 
     }
+}
