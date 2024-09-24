@@ -1,4 +1,4 @@
-package org.example;
+package org.example.bancoTest;
 
 public class Pessoa {
     public int getCodigo() {

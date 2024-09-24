@@ -1,4 +1,4 @@
-package org.example;
+package org.example.bancoTest;
 
 import java.sql.Connection;
 import java.sql.SQLException;

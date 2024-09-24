@@ -1,15 +1,12 @@
-package org.example;
+package org.example.bancoTest;
 
-import java.io.InvalidClassException;
 import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
 
 
 public class Main {
     public static void main(String[] args) throws SQLException {
-
 
         Connection conexao = FabricaConexao.getConexao();
         Statement stmt = conexao.createStatement();
