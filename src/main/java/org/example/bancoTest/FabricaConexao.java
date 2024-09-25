@@ -8,9 +8,9 @@ public class FabricaConexao {
 
     public static Connection getConexao(){
         try {
-            String url = "jdbc:mysql://localhost:3306/curso_java?autoReconnect=true&useSSL=false"; // Substitua pelo seu URL do banco de dados
+            String url = "jdbc:mysql://localhost:3306/curso_java?autoReconnect=true&useSSL=false&allowPublicKeyRetrieval=true";
             String user = "root";// substitua pelo seu usuário
-            String password = "luca##12";//substitua pela sua senha
+            String password = "senaigama";//substitua pela sua senha
 
             return DriverManager.getConnection(url,user,password);
         } catch (SQLException e) {
